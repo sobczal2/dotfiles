@@ -1,6 +1,3 @@
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-
 export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="funky"
@@ -16,13 +13,6 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
-
-# Check archlinux plugin commands here
-# https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/archlinux
-
-# Display Pokemon-colorscripts
-# Project page: https://gitlab.com/phoneybadger/pokemon-colorscripts#on-other-distros-and-macos
-#pokemon-colorscripts --no-title -s -r
 
 # fastfetch. Will be disabled if above colorscript was chosen to install
 fastfetch -c $HOME/.config/fastfetch/config-compact.jsonc
@@ -61,3 +51,5 @@ export PATH="$PATH:$(go env GOBIN):$(go env GOPATH)/bin"
 # ssh appent
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 
+# zsh compdump location
+export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
