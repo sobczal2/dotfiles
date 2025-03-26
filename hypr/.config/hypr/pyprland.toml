@@ -1,0 +1,34 @@
+[pyprland]
+
+plugins = [
+  "scratchpads",
+  "magnify",
+]
+
+[scratchpads.term]
+animation = "fromTop"
+command = "ghostty --class=gcom.mitchellh.ghostt-scratchpad"
+class = "gcom.mitchellh.ghostt-scratchpad"
+size = "75% 60%"
+hide_delay = 0.1
+force_monitor = "DP-2"
+
+[scratchpads.spotify]
+animation = "fromRight"
+command = "spotify-launcher"
+class = "Spotify"
+size = "60% 80%"
+unfocus = "hide"
+hide_delay = 0.1
+alt_toggle = true
+force_monitor = "DP-1"
+
+[scratchpads.1password]
+animation = "fromRight"
+command = "1password"
+class = "1Password"
+size = "60% 80%"
+unfocus = "hide"
+hide_delay = 0.1
+alt_toggle = true
+force_monitor = "DP-1"
