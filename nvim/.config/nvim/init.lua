@@ -30,6 +30,7 @@ require('lazy').setup {
     require 'plugins.harpoon',
     require 'plugins.toggleterm',
     require 'plugins.nvim-dap-ui',
+    require 'plugins.project',
 }
 
 vim.cmd.colorscheme 'catppuccin'
