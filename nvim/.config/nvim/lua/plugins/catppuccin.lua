@@ -4,7 +4,7 @@ return {
     priority = 1000,
     lazy = false,
     opts = {
-        flavour = 'macchiato',
+        flavour = 'mocha',
         integrations = {
             alpha = true,
             cmp = true,
