@@ -7,7 +7,7 @@ return {
     },
     keys = {
         {
-            '<leader>db',
+            '<F9>',
             function()
                 require('dap').toggle_breakpoint()
             end,
@@ -28,7 +28,7 @@ return {
             desc = '[D]ebug [L]og Point',
         },
         {
-            '<leader>dc',
+            '<F5>',
             function()
                 require('dap').continue()
             end,
@@ -49,28 +49,28 @@ return {
             desc = '[D]ebug [R]estart',
         },
         {
-            '<leader>dq',
+            '<S-F5>',
             function()
                 require('dap').terminate()
             end,
             desc = '[D]ebug [Q]uit',
         },
         {
-            '<leader>do',
+            '<F10>',
             function()
                 require('dap').step_over()
             end,
             desc = '[D]ebug Step [O]ver',
         },
         {
-            '<leader>di',
+            '<F11>',
             function()
                 require('dap').step_into()
             end,
             desc = '[D]ebug Step [I]nto',
         },
         {
-            '<leader>dO',
+            '<S-F11>',
             function()
                 require('dap').step_out()
             end,
