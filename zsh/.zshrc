@@ -15,7 +15,7 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # fastfetch. Will be disabled if above colorscript was chosen to install
-fastfetch -c $HOME/.config/fastfetch/config-compact.jsonc
+fastfetch
 
 # Set-up icons for files/folders in terminal
 alias ls='eza -a --icons'
