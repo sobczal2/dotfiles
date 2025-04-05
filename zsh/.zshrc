@@ -53,3 +53,6 @@ export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 
 # zsh compdump location
 export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
+
+# AppImage
+export PATH="$PATH:/home/sobczal/Applications"
