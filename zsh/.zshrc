@@ -46,7 +46,8 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 # go
-export PATH="$PATH:$(go env GOBIN):$(go env GOPATH)/bin"
+export GOPATH=$HOME/go
+export PATH="$PATH:$(go env GOPATH)/bin"
 
 # ssh appent
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"

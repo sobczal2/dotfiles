@@ -119,9 +119,11 @@ element-icon {
 }
 
 window {
-    padding:          5;
+    padding:          5px;
     background-color: @background;
-    border:           1;
+    border:           2px solid;
+    border-color: @yellow;
+    border-radius: 10px;
 }
 
 mainbox {
