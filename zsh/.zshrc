@@ -8,7 +8,6 @@ plugins=(
     zsh-autosuggestions
     zsh-syntax-highlighting
     rust
-    ssh-agent
     sudo
 )
 
@@ -48,9 +47,6 @@ unset __conda_setup
 # go
 export GOPATH=$HOME/go
 export PATH="$PATH:$(go env GOPATH)/bin"
-
-# ssh appent
-export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 
 # zsh compdump location
 export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
