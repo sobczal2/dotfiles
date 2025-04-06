@@ -1,0 +1,72 @@
+{
+    "layer": "top",
+    "position": "top",
+    "reload_style_on_change": true,
+    "modules-left": [
+        "custom/music"
+    ],
+    "modules-center": [
+        "hyprland/workspaces"
+    ],
+    "modules-right": [
+        "bluetooth",
+        "network",
+        "clock"
+    ],
+    "custom/music": {
+        "format": "  {}",
+        "escape": true,
+        "interval": 5,
+        "tooltip": false,
+        "exec": "playerctl metadata --format='{{ artist }}: {{ title }}'",
+        "on-click": "playerctl play-pause",
+        "max-length": 50
+    },
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            "active": "",
+            "default": "",
+            "empty": ""
+        },
+        "persistent-workspaces": {
+            "DP-2": [
+                1,
+                2,
+                3,
+                4,
+                5
+            ],
+            "DP-1": [
+                6,
+                7,
+                8,
+                9,
+                10
+            ]
+        }
+    },
+    "clock": {
+        "format": "{:%I:%M:%S %p} ",
+        "interval": 1,
+        "tooltip-format": "<tt>{calendar}</tt>",
+        "calendar": {
+            "format": {
+                "today": "<span color='#fAfBfC'><b>{}</b></span>"
+            }
+        }
+    },
+    "network": {
+        "format-wifi": "  {essid}",
+        "format-ethernet": "",
+        "format-disconnected": "",
+        "on-click": "ghostty -e nmtui"
+    },
+    "bluetooth": {
+        "format-on": "󰂯",
+        "format-off": "BT-off",
+        "format-disabled": "󰂲",
+        "format-connected": "󰂯  {device_alias}",
+        "on-click": "blueman-manager"
+    }
+}

@@ -1,2 +1,7 @@
 #!/bin/bash
-pkill rofi || true && rofi -show drun -modi drun,filebrowser,run,window
+
+if pgrep -x rofi >/dev/null; then
+    exit 0
+fi
+
+rofi -show drun -modi drun,filebrowser,run,window

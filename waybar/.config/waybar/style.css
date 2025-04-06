@@ -1,0 +1,98 @@
+@import "colors.css";
+
+* {
+    font-family: JetBrainsMono Nerd Font;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+window#waybar {
+    all: unset;
+}
+
+tooltip {
+    background: @surface0;
+    color: @text;
+}
+
+.modules-left {
+    padding: 7px;
+    margin: 10px;
+    border-radius: 10px;
+    background: @surface0;
+}
+
+.modules-center {
+    padding: 7px;
+    margin: 10px;
+    border-radius: 10px;
+    background: @surface0;
+}
+
+.modules-right {
+    padding: 7px;
+    margin: 10px;
+    border-radius: 10px;
+    background: @surface0;
+}
+
+#clock:hover,
+#bluetooth:hover,
+#network:hover,
+#custom-music:hover {
+    transition: all 0.3s ease;
+    color: @green;
+}
+
+#clock {
+    color: @mauve;
+    transition: all 0.3s ease;
+}
+
+#workspaces {
+    margin-right: 5px;
+}
+
+#workspaces button {
+    all: unset;
+    padding: 0px 7px;
+    color: @lavender;
+    transition: all 0.2s ease;
+}
+
+#workspaces button:hover {
+    color: @sapphire;
+}
+
+#workspaces button.active {
+    color: @sky;
+}
+
+#workspaces button.empty {
+    color: @overlay1;
+}
+
+#workspaces button.empty.active {
+    color: @sky;
+}
+
+#workspaces button.empty:hover {
+    color: @sapphire;
+}
+
+#bluetooth {
+    padding: 0px 5px;
+    color: @blue;
+    margin-right: 7px;
+}
+
+#network {
+    padding: 0px 5px;
+    color: @maroon;
+    margin-right: 7px;
+}
+
+#custom-music {
+    color: @mauve;
+    border-radius: 1rem;
+}
