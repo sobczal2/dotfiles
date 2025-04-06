@@ -1,6 +1,6 @@
 format=<b>%a ⏵</b> %s\n%b
 sort=-time
-output=DP-2
+output=eDP-1
 layer=overlay
 anchor=top-center
 width=500

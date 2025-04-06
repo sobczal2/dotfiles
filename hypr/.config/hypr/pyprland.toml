@@ -12,7 +12,7 @@ class = "gcom.mitchellh.ghostt-scratchpad"
 size = "80% 60%"
 position = "10% 20%"
 hide_delay = 0.1
-force_monitor = "DP-2"
+force_monitor = "eDP-1"
 
 [scratchpads.spotify]
 animation = "fromRight"
@@ -22,7 +22,7 @@ size = "60% 80%"
 unfocus = "hide"
 hide_delay = 0.1
 alt_toggle = true
-force_monitor = "DP-1"
+force_monitor = "eDP-1"
 
 [scratchpads.1password]
 animation = "fromRight"
@@ -32,4 +32,4 @@ size = "60% 80%"
 unfocus = "hide"
 hide_delay = 0.1
 alt_toggle = true
-force_monitor = "DP-1"
+force_monitor = "eDP-1"
