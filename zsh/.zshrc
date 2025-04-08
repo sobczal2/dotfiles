@@ -53,3 +53,6 @@ export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
 
 # AppImage
 export PATH="$PATH:/home/sobczal/Applications"
+
+# scripts
+export PATH="$PATH:/home/sobczal/bin"
