@@ -1,101 +1,131 @@
 @import "colors.css";
 
 * {
-  font-family: JetBrainsMono Nerd Font;
-  font-size: 15px;
-  font-weight: bold;
+    font-family: JetBrainsMono Nerd Font;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 window#waybar {
-  all: unset;
+    all: unset;
 }
 
 tooltip {
-  background: @surface0;
-  color: @text;
+    background: @surface0;
+    color: @text;
 }
 
 .modules-left {
-  padding: 5px;
-  margin: 10px 10px 0px 10px;
-  border-radius: 10px;
-  background: @surface0;
-  border: 2px solid @mauve;
+    padding: 5px;
+    margin: 10px 10px 0px 10px;
+    border-radius: 10px;
+    background: @surface0;
+    border: 2px solid @mauve;
 }
 
 .modules-center {
-  padding: 5px;
-  margin: 10px 10px 0px 10px;
-  border-radius: 10px;
-  background: @surface0;
-  border: 2px solid @mauve;
+    padding: 5px;
+    margin: 10px 10px 0px 10px;
+    border-radius: 10px;
+    background: @surface0;
+    border: 2px solid @mauve;
 }
 
 .modules-right {
-  padding: 5px;
-  margin: 10px 10px 0px 10px;
-  border-radius: 10px;
-  background: @surface0;
-  border: 2px solid @mauve;
+    padding: 5px;
+    margin: 10px 10px 0px 10px;
+    border-radius: 10px;
+    background: @surface0;
+    border: 2px solid @mauve;
 }
 
 #clock:hover,
 #bluetooth:hover,
 #network:hover,
-#custom-music:hover {
-  transition: all 0.3s ease;
-  color: @green;
+#custom-music:hover,
+#pulseaudio-slider slider:hover,
+#workspaces button:hover,
+#workspaces button.empty:hover,
+#workspaces button.active:hover {
+    color: @peach;
 }
 
 #clock {
-  color: @mauve;
-  transition: all 0.3s ease;
+    color: @mauve;
+    transition: all 0.3s ease;
 }
 
 #workspaces {
-  margin-right: 5px;
+    margin-right: 5px;
 }
 
 #workspaces button {
-  all: unset;
-  padding: 0px 7px;
-  color: @lavender;
-  transition: all 0.2s ease;
-}
-
-#workspaces button:hover {
-  color: @sapphire;
+    all: unset;
+    padding: 0px 7px;
+    color: @lavender;
+    transition: all 0.2s ease;
 }
 
 #workspaces button.active {
-  color: @sky;
+    color: @sky;
 }
 
 #workspaces button.empty {
-  color: @overlay1;
+    color: @overlay1;
 }
 
 #workspaces button.empty.active {
-  color: @sky;
-}
-
-#workspaces button.empty:hover {
-  color: @sapphire;
+    color: @sky;
 }
 
 #bluetooth {
-  padding: 0px 5px;
-  color: @blue;
-  margin-right: 7px;
+    padding: 0px 5px;
+    color: @blue;
+    margin-right: 7px;
+    transition: all 0.2s ease;
 }
 
 #network {
-  padding: 0px 5px;
-  color: @maroon;
-  margin-right: 7px;
+    padding: 0px 5px;
+    color: @rosewater;
+    margin-right: 7px;
+    transition: all 0.2s ease;
 }
 
 #custom-music {
-  color: @mauve;
-  border-radius: 1rem;
+    padding: 0px 5px;
+    color: @mauve;
+    border-radius: 1rem;
+    transition: all 0.2s ease;
+}
+
+#pulseaudio-slider {
+    padding: 0px 10px;
+}
+
+#pulseaudio-slider slider {
+    min-height: 0px;
+    min-width: 0px;
+    border: 2px solid @mauve;
+    background-image: none;
+    background-color: @surface0;
+    transition: all 0.2s ease;
+}
+
+#pulseaudio-slider slider:hover {
+    border: 2px solid @peach;
+}
+
+#pulseaudio-slider trough {
+    min-height: 7px;
+    min-width: 100px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 2px solid @overlay0;
+}
+
+#pulseaudio-slider highlight {
+    background-color: @surface1;
+    border: 2px solid @overlay0;
+    border: none;
 }
