@@ -7,6 +7,7 @@ notify() {
     resp=$(timeout 5 notify-send -t 5000 \
         -A action1=Open \
         -h string:x-canonical-private-synchronous:shot-notify \
+        --app-name="Screenshot" \
         "Screenshot taken")
 
     case "$resp" in
