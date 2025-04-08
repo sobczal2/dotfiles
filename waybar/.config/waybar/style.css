@@ -43,6 +43,7 @@ tooltip {
 #bluetooth:hover,
 #network:hover,
 #custom-music:hover,
+#battery:hover,
 #pulseaudio-slider slider:hover,
 #workspaces button:hover,
 #workspaces button.empty:hover,
@@ -128,4 +129,8 @@ tooltip {
     background-color: @surface1;
     border: 2px solid @overlay0;
     border: none;
+}
+
+#battery {
+    padding: 0px 10px;
 }
