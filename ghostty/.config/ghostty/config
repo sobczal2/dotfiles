@@ -1,7 +1,7 @@
 theme = catppuccin-mocha
 font-family = JetBrainsMono NFM
 font-size = 12.5
-gtk-single-instance = false
+gtk-single-instance = true
 cursor-invert-fg-bg = true
 window-decoration = none
 cursor-style = block
