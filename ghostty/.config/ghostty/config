@@ -1,9 +1,22 @@
 theme = catppuccin-mocha
-font-family = JetBrainsMono NFM
-font-size = 12.5
+font-family = JetBrainsMono Nerd Font
+font-size = 12
 gtk-single-instance = true
 cursor-invert-fg-bg = true
 window-decoration = none
 cursor-style = block
 cursor-style-blink = false
 shell-integration-features = no-cursor
+keybind = option+left=unbind
+keybind = option+right=unbind
+keybind = option+up=unbind
+keybind = option+down=unbind
+keybind = option+one=unbind
+keybind = option+two=unbind
+keybind = option+three=unbind
+keybind = option+four=unbind
+keybind = option+five=unbind
+keybind = option+six=unbind
+keybind = option+seven=unbind
+keybind = option+eight=unbind
+keybind = option+nine=unbind
