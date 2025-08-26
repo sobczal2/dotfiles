@@ -13,7 +13,6 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup {
-    require 'plugins.neo-tree',
     require 'plugins.catppuccin',
     require 'plugins.lualine',
     require 'plugins.treesitter',
@@ -24,7 +23,6 @@ require('lazy').setup {
     require 'plugins.rustaceanvim',
     require 'plugins.gitsigns',
     require 'plugins.alpha',
-    require 'plugins.which-key',
     require 'plugins.todo-comments',
     require 'plugins.flash',
     require 'plugins.harpoon',
