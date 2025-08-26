@@ -3,7 +3,9 @@ return {
     version = '^5',
     lazy = false,
     config = function()
-        vim.g.rustaceanvim = {}
+        vim.g.rustaceanvim = {
+
+        }
     end,
     keys = {
         { '<leader>dc', '<cmd>RustLsp debug<cr>', ft = 'rust', desc = '[D]ebug [C]urrent' },
