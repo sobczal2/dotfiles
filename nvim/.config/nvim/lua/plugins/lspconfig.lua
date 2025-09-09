@@ -24,7 +24,6 @@ return {
                 map('<leader>cd', telescope.lsp_document_symbols, '[C]ode: [D]ocument Symbols')
                 map('<leader>cw', telescope.lsp_dynamic_workspace_symbols, '[C]ode: [W]orkspace Symbols')
                 map('<leader>cr', vim.lsp.buf.rename, 'Code: [R]ename')
-                map('<leader>ca', vim.lsp.buf.code_action, '[C]ode: [A]ction', { 'n', 'x' })
                 local client = vim.lsp.get_client_by_id(event.data.client_id)
 
                 if client and client.name == 'ts_ls' then

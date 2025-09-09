@@ -46,6 +46,8 @@ unset __conda_setup
 
 # go
 export PATH=$PATH:/usr/local/go/bin
+export GOPATH=$HOME/go
+export PATH="$PATH:$(go env GOPATH)/bin"
 
 # zsh compdump location
 export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
