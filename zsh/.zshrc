@@ -23,6 +23,11 @@ alias lt='eza -a --tree --level=1 --icons'
 
 # Set-up FZF key bindings (CTRL R for fuzzy history finder)
 source <(fzf --zsh)
+export FZF_ALT_C_COMMAND='fd --type d --hidden --follow --exclude .git'
+export FZF_ALT_C_OPTS="--preview 'ls -p --color=always {} | head -200' --preview-window=right:50%"
+if [[ -n "$TMUX" ]]; then
+  export FZF_TMUX_OPTS='-p 80%,60%'   # 80% width, 60% height
+fi
 
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
