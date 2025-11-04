@@ -62,3 +62,6 @@ export PATH="$PATH:/home/sobczal/Applications"
 
 # scripts
 export PATH="$PATH:/home/sobczal/bin"
+
+# gradle
+export PATH=$PATH:/opt/gradle/gradle-7.6.4/bin
